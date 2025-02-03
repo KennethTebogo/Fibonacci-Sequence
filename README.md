@@ -10,14 +10,12 @@ The main function calls itself to find the previous two Fibonacci numbers, adds 
 Fibonacci(0) = 0
 Fibonacci(1) = 1
 For values of n > 1, the function recursively calls Fibonacci(n-1) and Fibonacci(n-2) and adds their results.
-
-python
-Copy
+```
 def fibonacci(n):
     if n <= 1:
         return n
     return fibonacci(n-1) + fibonacci(n-2)
-    
+```
 # Performance Note
 For larger values of n, this recursive approach can become inefficient because it involves a lot of repeated calculations (i.e., the same Fibonacci numbers are recalculated multiple times). The time complexity of this approach is exponential, specifically O(2^n).
 
@@ -26,14 +24,17 @@ For larger values of n, an iterative approach or memoization would be much more 
 
 Iterative approach has O(n) time complexity and O(1) space complexity.
 Memoization stores previously computed Fibonacci numbers to avoid redundant calculations.
+
 Example
-python
-Copy
 
 # Calculate the 6th Fibonacci number
+```
 result = fibonacci(6)
 print(result)  # Output: 8
-Contributions
+
+```
+
+# Contributions
 Feel free to fork the repository and submit issues or pull requests for improvements, optimizations, or additional features!
 
 # License
